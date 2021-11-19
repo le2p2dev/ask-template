@@ -9,8 +9,12 @@ on:
 jobs:
 
   build:
-
+  
+    defaults:
+      run:
+        working-directory: ./back
     runs-on: ubuntu-latest
+    
 
     steps:
     - uses: actions/checkout@v2
