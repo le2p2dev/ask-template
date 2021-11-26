@@ -1,0 +1,19 @@
+name: Test VM push
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches : [main]
+
+
+jobs:
+  builds:
+
+
+    defaults:
+      run:
+        working-directory: .
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "toto"
